@@ -109,7 +109,7 @@ export default class incomeAndExpenses {
     }
 
     addEntry(entry = {}) {
-        this.root.querySelector(".entries").insertAdjacentHTML("beforeend", BudgetTracker.entryHtml());
+        this.root.querySelector(".entries").insertAdjacentHTML("beforeend", incomeAndExpenses.entryHtml());
 
         const row = this.root.querySelector(".entries tr:last-of-type");
 
